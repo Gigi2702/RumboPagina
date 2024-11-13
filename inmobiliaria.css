@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;400;700;900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(Imagenes/Fondo.jpg) center/cover;
+    padding-top: 50px;
+}
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a {
+    color: #5394b8;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 10px;
+    transition: .4s;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+nav ul a:hover {
+    border-bottom: 1px solid #FEDC00;
+    background-color: #00293F;
+}
+
+#hero {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 220px;
+}
+
+
+#hero h2 {
+    color: #2e6583;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+#hero h1 {
+    color: #00293F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#hero button {
+    padding: 10px 50px;
+    color: #FEDC00;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    margin-top: 100px;
+    cursor: pointer;
+    background-color: #00293F;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    background-color: #feed7d;
+    padding-top: 0PX;
+    padding-bottom: 100px;
+    padding-top: 100PX;
+    
+}
+
+
+#planes {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 85%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#planes h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: "Lexend Exa", sans-serif;
+    color: #00293F;
+}
+
+#planes p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#planes .fila {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#planes article {
+    background-color: #5a8a90;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+#planes article:hover {
+    transform: translateY(-10px);
+}
+
+#planes article img {
+    border-radius: 10px;
+    transition: 0.4s;
+    width: 100%;
+    height: auto;
+}
+
+#planes article h3 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #00293F; 
+    margin-top: 10px; 
+    position: static; 
+    transform: none; 
+}
+
+#planes article p {
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.Slider-Box {
+    width: 1068px; 
+    height: 644px; 
+    margin: 50px auto; 
+    overflow: hidden; 
+}
+
+
+.Slider-Box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: calc(1068px * 4); 
+    animation: slide 30s infinite; 
+}
+
+.Slider-Box li {
+    width: 1068px; 
+    height: 644px; 
+    list-style: none;
+    position: relative;
+}
+
+.Imagen {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #63A8CC;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.Imagen h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }      
+    25%, 45% { transform: translateX(-1068px); } 
+    50%, 70% { transform: translateX(-2136px); } 
+    75%, 100% { transform: translateX(-3204px); } 
+}
+
+.Opiniones-Box {
+    width: 100%; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #55a4bc; 
+    border-radius: 10px; 
+}
+
+.Opiniones-Box h2 {
+    text-align: center; 
+    color: #63A8CC; 
+}
+
+.Opiniones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+.Opiniones .Opinion {
+    background-color: #384871; 
+    border-radius: 10px; 
+    padding: 15px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.Opiniones .Opinion-Icon {
+    margin-right: 15px; 
+}
+
+.Opiniones .Opinion-Icon img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.Opiniones .Opinion-Texto {
+    flex-grow: 1; 
+}
+
+.Opiniones .Opinion p {
+    margin: 0; 
+    font-style: italic;
+    color: #ffffff;
+}
+
+.Opiniones .Opinion h4 {
+    margin: 10px 0 5px 0; 
+    font-weight: bold; 
+}
+
+.Opiniones .Opinion span {
+    font-size: 14px; 
+    color: #acccfc; 
+}
+
+
+
+.Galeria-Videos {
+    background-color: #B2E0F5; 
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.Galeria-Videos h2 {
+    color: #63A8CC; 
+    margin-bottom: 20px; 
+}
+
+.Videos {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; }
+
+.Video iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.Seccion-Apartamentos {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('fondo-apartamentos.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.Texto-Apartamentos {
+    max-width: 600px;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Seccion-Apartamentos h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.Seccion-Apartamentos p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.Boton-VerOfertas {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.Boton-VerOfertas:hover {
+    background-color: #FFC300;
+    transform: scale(1.05);
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-apartments {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.gallery-apartments h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cuota button{
+    color: black;
+    background-color: #5394b8;
+}
